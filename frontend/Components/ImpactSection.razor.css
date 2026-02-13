@@ -1,0 +1,71 @@
+/* Location: frontend/Components/ImpactSection.razor.css */
+/* Styling for Impact section */
+
+.impact-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(180deg, #1B0A3D, #2A1B5C);
+    color: white;
+}
+
+.impact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.impact-text {
+    flex: 1;
+}
+
+.impact-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.impact-text p {
+    color: #E0E0E0;
+    margin-bottom: 2rem;
+}
+
+.stats {
+    display: flex;
+    gap: 2rem;
+}
+
+.stat h3 {
+    font-size: 2rem;
+    color: #7F5AF0;
+}
+
+.stat span {
+    font-size: 0.9rem;
+    color: #CFCFCF;
+}
+
+.impact-visual {
+    flex: 1;
+    text-align: center;
+}
+
+.icon {
+    font-size: 8rem;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@media (max-width: 992px) {
+    .impact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stats {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

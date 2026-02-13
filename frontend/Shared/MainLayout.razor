@@ -1,0 +1,14 @@
+@*// Location: frontend/Shared/MainLayout.razor
+// Main layout for public pages with navbar, body content, and footer*@
+
+@inherits LayoutComponentBase
+
+<div class="main-layout">
+    <NavbarComponent />
+
+    <main class="content">
+        @Body
+    </main>
+
+    <Footer />
+</div>

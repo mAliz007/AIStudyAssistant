@@ -1,0 +1,10 @@
+/* Location: frontend/Components/Footer.razor.css */
+/* Simple footer styling for dark mode */
+
+.footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #2A1B5C;
+    color: #E0E0E0;
+    font-size: 0.9rem;
+}

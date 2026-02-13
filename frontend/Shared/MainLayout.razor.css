@@ -1,0 +1,20 @@
+/* Location: frontend/Shared/MainLayout.razor.css */
+/* Styling for MainLayout including dark background and spacing */
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #1B0A3D; /* dark purple background */
+    color: #FFFFFF;
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+}
+
+/* Optional: smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
