@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "AIStudyAssistant/frontend/**/*.csproj",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "bin/Release/net10.0/publish/wwwroot"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
