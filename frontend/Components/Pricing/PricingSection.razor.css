@@ -1,0 +1,98 @@
+.pricing-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #1B0A3D;
+    color: #ffffff;
+}
+
+.pricing-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Card common styling */
+.pricing-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.pricing-card .price {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+    width: 100%;
+}
+
+.pricing-card ul li {
+    margin-bottom: 0.75rem;
+}
+
+/* Free Tier */
+.free-tier {
+    background-color: #f9f9f9;
+    color: #1B0A3D;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.free-tier .cta-btn {
+    background-color: #7F5AF0;
+    color: #fff;
+}
+
+/* Golden Tier */
+.golden-tier {
+    background-color: #2A1B5C;
+    color: #FFD700;
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+}
+
+.golden-tier .cta-btn {
+    background-color: #FFD700;
+    color: #1B0A3D;
+    font-weight: bold;
+}
+
+/* Hover effect for cards */
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 215, 0, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        max-width: 90%;
+        margin-bottom: 2rem;
+    }
+}

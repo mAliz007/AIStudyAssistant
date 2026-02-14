@@ -1,0 +1,13 @@
+<button @onclick="OnGoogleSignUpClicked" class="cta-btn btn-primary google-btn">
+    Sign up with Google
+</button>
+
+@code {
+    [Parameter] public EventCallback OnSignUp { get; set; }
+
+    private async Task OnGoogleSignUpClicked()
+    {
+        if (OnSignUp.HasDelegate)
+            await OnSignUp.InvokeAsync(null);
+    }
+}

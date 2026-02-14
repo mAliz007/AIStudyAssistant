@@ -1,0 +1,22 @@
+@using frontend.Components.Register
+@inject NavigationManager Navigation
+
+<div class="hero-section">
+    <div class="hero-image">
+        <img src="images/login-illustration.png" alt="Register Illustration" />
+    </div>
+    <div class="hero-content">
+        <h1 class="hero-title">Join Us!</h1>
+        <p class="hero-subtitle">Register and let the learning begin. Explore your AIStudyAssistant dashboard.</p>
+        <div class="hero-buttons">
+            <GoogleSignUpButton OnSignUp="@HandleGoogleSignUp" />
+        </div>
+    </div>
+</div>
+
+@code {
+    private void HandleGoogleSignUp()
+    {
+        Navigation.NavigateTo("/dashboard");
+    }
+}

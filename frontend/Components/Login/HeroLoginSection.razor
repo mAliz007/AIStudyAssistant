@@ -1,0 +1,22 @@
+@using frontend.Components.Login
+@inject NavigationManager Navigation
+
+<div class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">Welcome Back!</h1>
+        <p class="hero-subtitle">Sign in to continue accessing your AIStudyAssistant dashboard.</p>
+        <div class="hero-buttons">
+            <GoogleSignInButton OnSignIn="@HandleGoogleSignIn" />
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="images/login-illustration.png" alt="Login Illustration" />
+    </div>
+</div>
+
+@code {
+    private void HandleGoogleSignIn()
+    {
+        Navigation.NavigateTo("/dashboard");
+    }
+}
